@@ -236,3 +236,32 @@
     text-decoration: none;
   }
   
+/* BACK TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #00e3ff;
+  color: #0a0a0a;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 999; 
+}
+
+/* Show the button when scrolling past 300px */
+.back-to-top.show-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* HOVER EFFECT CLASS FOR SKILL CARDS */
+.skill-card.hover-effect {
+  background-color: #333;
+  border-color: #fff;
+  transition: background-color 0.3s;
+}
